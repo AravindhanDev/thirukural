@@ -13,23 +13,22 @@ body {
 	background-attachment: fixed;
 	color: #fff;
 	font-family: 'Kavivanar', cursive;
+	display: flex;
+	justify-content: center;
 }
 
 header {
 	text-align: center;
-	margin-top: 2rem;
+	margin: 2rem 0;
 	font-weight: 900;
 }
 
 .App {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 90%;
+	width: 100%;
 	box-shadow: 5px 5px 10px rgba(200, 200, 200, 0.1),
 		-5px -5px 10px rgba(200, 200, 200, 0.1);
 	background-color: rgba(0, 0, 0, 0.3);
+	padding: 1rem;
 }
 
 .App input {
@@ -89,20 +88,22 @@ header {
 }
 
 footer {
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	text-align: center;
-	margin-bottom: 2rem;
+	display: flex;
+	justify-content: center;
+	margin-top: 8.3rem;
 }
 
 @media (max-width: 680px) {
+	header {
+		margin: 0.8rem 0;
+	}
 	.App {
 		width: 100%;
 	}
 	.App input {
 		padding: 0.2rem;
 		font-size: 0.8rem;
+		margin: 0;
 	}
 	.App button {
 		padding: 0.2rem;
@@ -115,5 +116,11 @@ footer {
 	}
 	.kural .lines {
 		font-size: 0.8rem;
+	}
+	footer {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		margin-bottom: 1rem;
 	}
 }
