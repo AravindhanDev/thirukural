@@ -1,0 +1,119 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+		url('https://www.adda247.com/jobs/wp-content/uploads/sites/8/2021/08/09054348/512x512bb.jpg');
+	background-position: 55% 10%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #fff;
+	font-family: 'Kavivanar', cursive;
+}
+
+header {
+	text-align: center;
+	margin-top: 2rem;
+	font-weight: 900;
+}
+
+.App {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+}
+
+.App input {
+	padding: 0.5rem;
+	font-size: 1.3rem;
+	border-radius: 5px;
+	margin-bottom: 2rem;
+	background-color: transparent;
+	border: 3px solid #ccc;
+	color: #ccc;
+	margin: 0 1rem 2rem;
+}
+
+.App input:focus {
+	outline: none;
+}
+
+.App button {
+	padding: 0.5rem;
+	font-size: 1.1rem;
+	font-weight: 600;
+	border-radius: 5px;
+	border: none;
+	background-color: #ccc;
+}
+
+.kural {
+	background-color: rgba(0, 0, 0, 0.3);
+	width: 100%;
+	border-radius: 10px;
+	padding: 1.5rem;
+	box-shadow: 5px 5px 10px rgba(200, 200, 200, 0.1),
+		-5px -5px 10px rgba(200, 200, 200, 0.1);
+	text-align: left;
+	color: #ccc;
+}
+
+.kural strong {
+	color: #eee;
+	font-size: 1.1rem;
+}
+
+.kural .details {
+	padding: 1rem 0;
+}
+
+.details p {
+	padding: 0.4rem 0;
+}
+
+.kural .lines {
+	padding: 1rem 0;
+	color: green;
+}
+
+.kural .expn {
+	padding: 1rem 0;
+	letter-spacing: 1.5px;
+	line-height: 1.5;
+}
+
+footer {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+@media (max-width: 680px) {
+	.App {
+		width: 100%;
+	}
+	.App input {
+		padding: 0.3rem;
+		font-size: 1rem;
+	}
+	.App button {
+		padding: 0.3rem;
+		font-size: 0.9rem;
+	}
+	.kural {
+		width: 100%;
+		font-size: 1rem;
+		padding: 0.2rem;
+	}
+	.kural .lines {
+		font-size: 0.8rem;
+	}
+}
