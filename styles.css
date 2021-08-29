@@ -90,7 +90,6 @@ header {
 footer {
 	display: flex;
 	justify-content: center;
-	margin-top: 3.3rem;
 }
 
 @media (max-width: 680px) {
